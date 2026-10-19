@@ -1,0 +1,66 @@
+[worldserver]
+# mod-resurrect-plus | 1=enabled, 0=disabled
+ResurrectPlus.Enable = 1
+ResurrectPlus.SendGraveyardMarker = 1
+# 0 = standard graveyard; 1 = corpse ghost
+ResurrectPlus.WorldGhostMode = 1
+# 0/2 = AzerothCore dungeon graveyard/entrance behavior; 1 = corpse ghost
+ResurrectPlus.InstanceGhostMode = 2
+ResurrectPlus.IgnoreBattlegrounds = 1
+ResurrectPlus.IgnoreArenas = 1
+
+ResurrectPlus.Penalties.Enable = 1
+# Aura penalties require a suitable existing/custom Spell.dbc spell ID.
+# The Amount field is documentation for intended spell magnitude; actual
+# magnitude comes from Spell.dbc, not from this module.
+ResurrectPlus.DamagePenalty.Enable = 0
+ResurrectPlus.DamagePenalty.Amount = 25
+ResurrectPlus.DamagePenalty.Duration = 60
+ResurrectPlus.DamagePenalty.SpellId = 0
+ResurrectPlus.HealingPenalty.Enable = 0
+ResurrectPlus.HealingPenalty.Amount = 20
+ResurrectPlus.HealingPenalty.Duration = 60
+ResurrectPlus.HealingPenalty.SpellId = 0
+ResurrectPlus.SpeedPenalty.Enable = 0
+ResurrectPlus.SpeedPenalty.Amount = 20
+ResurrectPlus.SpeedPenalty.Duration = 30
+ResurrectPlus.SpeedPenalty.SpellId = 0
+ResurrectPlus.HealthPenalty.Enable = 0
+ResurrectPlus.HealthPenalty.Amount = 20
+ResurrectPlus.HealthPenalty.Duration = 120
+ResurrectPlus.HealthPenalty.SpellId = 0
+
+ResurrectPlus.XPPenalty.Enable = 0
+ResurrectPlus.XPPenalty.Amount = 50
+ResurrectPlus.XPPenalty.Duration = 300
+
+ResurrectPlus.DurabilityPenalty.Enable = 0
+ResurrectPlus.DurabilityPenalty.Amount = 10
+
+ResurrectPlus.ResurrectStats.Enable = 0
+ResurrectPlus.ResurrectHealthPct = 50
+ResurrectPlus.ResurrectManaPct = 50
+
+ResurrectPlus.XPLoss.Enable = 0
+# 0=fixed XP; 1=% current XP; 2=% next-level requirement
+ResurrectPlus.XPLoss.Mode = 1
+ResurrectPlus.XPLoss.FixedAmount = 500
+ResurrectPlus.XPLoss.Percentage = 5
+ResurrectPlus.XPLoss.MinLevel = 10
+ResurrectPlus.XPLoss.MaxAmount = 5000
+# 0=death, 1=any resurrection following a death
+ResurrectPlus.XPLoss.ApplyOn = 0
+ResurrectPlus.XPLoss.RepeatedDeathMultiplier = 1.0
+ResurrectPlus.XPLoss.IgnoreMaxLevel = 1
+# Deleveling intentionally unsupported
+ResurrectPlus.XPLoss.AllowDelevel = 0
+
+ResurrectPlus.RepeatedDeaths.Enable = 0
+ResurrectPlus.RepeatedDeaths.Window = 600
+# The following options are RESERVED, NOT IMPLEMENTED in this release
+ResurrectPlus.ReclaimDelay = 30
+ResurrectPlus.RepeatedDeaths.DelayIncrease = 15
+ResurrectPlus.RepeatedDeaths.MaxDelay = 120
+ResurrectPlus.RepeatedDeaths.ResetTime = 600
+ResurrectPlus.InstancePenalties.Enable = 0
+ResurrectPlus.InstancePenaltyMultiplier = 1.5
